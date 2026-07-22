@@ -1223,4 +1223,84 @@ opacity:1;
 
 transform:translateX(0);
 }
+/*=========================
+CURSOR GLOW
+=========================*/
 
+#cursorGlow{
+
+position:fixed;
+
+width:320px;
+height:320px;
+
+background:
+radial-gradient(circle,
+rgba(212,175,55,.22),
+transparent 70%);
+
+border-radius:50%;
+
+pointer-events:none;
+
+transform:
+translate(-50%,-50%);
+
+z-index:0;
+
+filter:blur(35px);
+
+transition:
+left .08s linear,
+top .08s linear;
+
+}
+
+/*=========================
+FLOATING GOLD CIRCLES
+=========================*/
+
+.floatingCircle{
+
+position:absolute;
+
+border-radius:50%;
+
+background:
+rgba(212,175,55,.08);
+
+backdrop-filter:blur(10px);
+
+pointer-events:none;
+
+}
+
+.one{
+
+width:180px;
+height:180px;
+
+top:15%;
+right:12%;
+
+}
+
+.two{
+
+width:100px;
+height:100px;
+
+bottom:18%;
+left:10%;
+
+}
+
+.three{
+
+width:60px;
+height:60px;
+
+top:60%;
+right:35%;
+
+}
